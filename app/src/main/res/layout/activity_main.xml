@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20sp"
+    android:layout_marginLeft="15sp"
+    android:layout_marginRight="15sp"
+    android:layout_marginTop="20sp"
+    android:background="@drawable/ingdong_news_bgcolor"
+    android:orientation="horizontal"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    tools:context="com.rongsheng.aiseries.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"/>
+
+    <com.rongsheng.aiseries.view.NoticeView
+        android:id="@+id/notice_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        >
+    </com.rongsheng.aiseries.view.NoticeView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="  | 更多 "
+        android:textSize="18sp"/>
+</LinearLayout>
